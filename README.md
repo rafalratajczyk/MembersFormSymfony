@@ -51,6 +51,7 @@ What to do before running
 
 
 **Enjoy!**
+
 [1]:    https://symfony.com/doc/current/security/named_encoders.html
 [2]:    http://symfony.com/blog/new-in-symfony-2-7-security-improvements
 [3]:    http://symfony.com/doc/current/doctrine.html
