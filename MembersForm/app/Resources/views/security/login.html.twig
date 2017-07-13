@@ -2,7 +2,7 @@
 
 {% block body %}
 
-    <form class="form-signin">
+    <form class="form-signin" action="{{ path('login') }}" method="POST">
         <h2 class="form-signin-heading">Please sign in</h2>
 
         <label for="_username" class="sr-only">Username</label>
