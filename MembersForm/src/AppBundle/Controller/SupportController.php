@@ -15,7 +15,9 @@ class SupportController extends Controller
      */
     public function indexAction()
     {
-        $form = $this->createForm(ContactFormType::class);
+        $form = $this->createForm(ContactFormType::class, null, [
+            'action' => $this->generateUrl('handle-form-submission')
+        ]);
 
         return $this->render('support/index.html.twig', [
             'my_form' => $form->createView()
@@ -25,7 +27,7 @@ class SupportController extends Controller
     /**
      * @param Request $request
      * @Route("/form-submission", name="handle-form-submission")
-     * @Method("POST)
+     * @Method("POST")
      */
 
     public function handleFormSubmissionAction(Request $request)
@@ -53,5 +55,9 @@ class SupportController extends Controller
             );
 
         $this->get('mailer')->send($message);
+
+        $this->addFlash('Success', 'Your message was sent!');
+
+        return $this->redirectToRoute('homepage');
     }
 }
