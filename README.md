@@ -18,6 +18,7 @@ username or email twice or more. Username and email are unique.
 
 Below how this app looks:
 
+<img width="300" alt="zrzut ekranu 2017-07-13 o 18 51 27" src="https://user-images.githubusercontent.com/27738202/28178730-c52a9908-67ff-11e7-8db5-069d4c4c41c2.png">
 
 
 
