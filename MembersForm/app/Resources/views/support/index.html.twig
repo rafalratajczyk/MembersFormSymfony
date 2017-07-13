@@ -1,19 +1,5 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <div id="wrapper">
-        <div class="container">
-
-            {% include('flashmessages.html.twig') %}
-            {{ form(my_form) }}
-        </div>
-    </div>
-{% endblock %}
-
-{% block stylesheets %}
-<style>
-    .container {
-        margin-top: 40px;
-    }
-</style>
+    {{ form(my_form) }}
 {% endblock %}
