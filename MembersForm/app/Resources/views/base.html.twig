@@ -12,9 +12,13 @@
     </head>
     <body>
 
-        <div id="wrapper">
+        <div class="container">
 
              {% include('flashmessages.html.twig') %}
+
+            {% if app.user %}
+            <a href="{{ logout_path('main') }}">Logout</a>
+            {% endif %}
 
              {% block body %}{% endblock %}
         </div>
